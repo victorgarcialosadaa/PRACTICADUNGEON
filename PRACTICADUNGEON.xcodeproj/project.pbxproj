@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		335215FA21A873E400559CD7 /* DUNGEON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335215F921A873E400559CD7 /* DUNGEON.swift */; };
+		33C1EA7621B8515200151C7C /* ViewControllerShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1EA7521B8515200151C7C /* ViewControllerShop.swift */; };
+		33D35E0F21C18A5A001D5161 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D35E0E21C18A5A001D5161 /* Collections.swift */; };
 		33F5C3BD219F38A200DB93A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5C3BC219F38A200DB93A6 /* AppDelegate.swift */; };
 		33F5C3BF219F38A200DB93A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5C3BE219F38A200DB93A6 /* ViewController.swift */; };
 		33F5C3C2219F38A200DB93A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F5C3C0219F38A200DB93A6 /* Main.storyboard */; };
@@ -14,6 +17,11 @@
 		33F5C3C7219F38A400DB93A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F5C3C5219F38A400DB93A6 /* LaunchScreen.storyboard */; };
 		33F5C3D2219F38A400DB93A6 /* PRACTICADUNGEONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5C3D1219F38A400DB93A6 /* PRACTICADUNGEONTests.swift */; };
 		33F5C3DD219F38A400DB93A6 /* PRACTICADUNGEONUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5C3DC219F38A400DB93A6 /* PRACTICADUNGEONUITests.swift */; };
+		33F5C3EF219F3D4A00DB93A6 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5C3EE219F3D4A00DB93A6 /* Items.swift */; };
+		33F5C3F1219F3D5900DB93A6 /* Monsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5C3F0219F3D5900DB93A6 /* Monsters.swift */; };
+		33F5C3F3219F3DD100DB93A6 /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5C3F2219F3DD100DB93A6 /* Heroes.swift */; };
+		33F5C3F6219F3E0100DB93A6 /* Stuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5C3F5219F3E0100DB93A6 /* Stuff.swift */; };
+		33F5C3F8219F3E0B00DB93A6 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5C3F7219F3E0B00DB93A6 /* Dice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		335215F921A873E400559CD7 /* DUNGEON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUNGEON.swift; sourceTree = "<group>"; };
+		33C1EA7521B8515200151C7C /* ViewControllerShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerShop.swift; sourceTree = "<group>"; };
+		33D35E0E21C18A5A001D5161 /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
 		33F5C3B9219F38A200DB93A6 /* PRACTICADUNGEON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRACTICADUNGEON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F5C3BC219F38A200DB93A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33F5C3BE219F38A200DB93A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,11 @@
 		33F5C3D8219F38A400DB93A6 /* PRACTICADUNGEONUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRACTICADUNGEONUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F5C3DC219F38A400DB93A6 /* PRACTICADUNGEONUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRACTICADUNGEONUITests.swift; sourceTree = "<group>"; };
 		33F5C3DE219F38A400DB93A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F5C3EE219F3D4A00DB93A6 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		33F5C3F0219F3D5900DB93A6 /* Monsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monsters.swift; sourceTree = "<group>"; };
+		33F5C3F2219F3DD100DB93A6 /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
+		33F5C3F5219F3E0100DB93A6 /* Stuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stuff.swift; sourceTree = "<group>"; };
+		33F5C3F7219F3E0B00DB93A6 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,7 @@
 		33F5C3BB219F38A200DB93A6 /* PRACTICADUNGEON */ = {
 			isa = PBXGroup;
 			children = (
+				33F5C3F4219F3DD700DB93A6 /* Clases */,
 				33F5C3BC219F38A200DB93A6 /* AppDelegate.swift */,
 				33F5C3BE219F38A200DB93A6 /* ViewController.swift */,
 				33F5C3C0219F38A200DB93A6 /* Main.storyboard */,
@@ -123,6 +140,21 @@
 				33F5C3DE219F38A400DB93A6 /* Info.plist */,
 			);
 			path = PRACTICADUNGEONUITests;
+			sourceTree = "<group>";
+		};
+		33F5C3F4219F3DD700DB93A6 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				33F5C3F2219F3DD100DB93A6 /* Heroes.swift */,
+				33F5C3EE219F3D4A00DB93A6 /* Items.swift */,
+				33F5C3F0219F3D5900DB93A6 /* Monsters.swift */,
+				33F5C3F5219F3E0100DB93A6 /* Stuff.swift */,
+				33F5C3F7219F3E0B00DB93A6 /* Dice.swift */,
+				335215F921A873E400559CD7 /* DUNGEON.swift */,
+				33C1EA7521B8515200151C7C /* ViewControllerShop.swift */,
+				33D35E0E21C18A5A001D5161 /* Collections.swift */,
+			);
+			path = Clases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +288,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335215FA21A873E400559CD7 /* DUNGEON.swift in Sources */,
+				33F5C3EF219F3D4A00DB93A6 /* Items.swift in Sources */,
+				33F5C3F8219F3E0B00DB93A6 /* Dice.swift in Sources */,
+				33F5C3F1219F3D5900DB93A6 /* Monsters.swift in Sources */,
+				33F5C3F3219F3DD100DB93A6 /* Heroes.swift in Sources */,
 				33F5C3BF219F38A200DB93A6 /* ViewController.swift in Sources */,
+				33F5C3F6219F3E0100DB93A6 /* Stuff.swift in Sources */,
+				33C1EA7621B8515200151C7C /* ViewControllerShop.swift in Sources */,
 				33F5C3BD219F38A200DB93A6 /* AppDelegate.swift in Sources */,
+				33D35E0F21C18A5A001D5161 /* Collections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
