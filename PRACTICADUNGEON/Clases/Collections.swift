@@ -11,7 +11,7 @@ import UIKit
 var chosenHero:Heroes?
 
     
-    
+
 var listaHeroes:[Heroes]=[
         Heroes(health:5,
                name:"hero1",
@@ -110,4 +110,5 @@ var listaItems:[Items] = [
         Monsters(name: "Grandmaster", img: UIImage(named: "monster13")!,health: 4, moneyValue: 15, expValue: 10),
         Monsters(name: "Destroyer", img: UIImage(named: "monster14")!,health: 4, moneyValue: 15, expValue: 10),
         Monsters(name: "King", img: UIImage(named: "monster15")!,health: 4, moneyValue: 15, expValue: 10)]
+
 

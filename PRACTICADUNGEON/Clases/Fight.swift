@@ -1,22 +1,24 @@
 //
-//  DUNGEON.swift
+//  Fight.swift
 //  PRACTICADUNGEON
 //
-//  Created by DAM on 23/11/2018.
+//  Created by DAM on 21/12/2018.
 //  Copyright © 2018 DAM. All rights reserved.
 //
 
 import UIKit
 
 
-class DUNGEON : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    class Fight: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+
+        
+        @IBOutlet weak var pickerViewMonstruo: UIPickerView!
+        
+        @IBOutlet weak var pickerViewHeroe: UIPickerView!
         
         var monsterList:[Monsters]=listaMonstruos
-      
-    @IBOutlet weak var pickerView: UIPickerView!
-    
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> (Int) {
+        
+        func numberOfComponents(in pickerView: UIPickerView) -> (Int) {
             return 1
         }
         
@@ -54,7 +56,7 @@ class DUNGEON : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             //var aleatorio = Int(arc4random_uniform(Int32(3)))
             let number = Int.random(in: 0 ..< 3)
             
-            pickerView.selectRow(number, inComponent: 0, animated: true)
+            //pickerView.selectRow(number, inComponent: 0, animated: true)
             
             
             UIView.animate(withDuration: 1, animations:{
@@ -95,8 +97,11 @@ class DUNGEON : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
             
-            pickerView.delegate = self
-            pickerView.dataSource = self
+            pickerViewMonstruo.delegate = self
+            pickerViewMonstruo.dataSource = self
+            
+            pickerViewHeroe.delegate = self
+            pickerViewHeroe.dataSource = self
         }
         
         

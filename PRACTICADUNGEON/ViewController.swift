@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func chooseHero3(_ sender: UIButton) {
   if sender.tag == 3 {
     chosenHero=listaHeroes[2]
-        }
+        }                                                                                        
     }
     override func viewDidLoad() {
        
