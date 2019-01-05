@@ -10,19 +10,20 @@ import Foundation
 import UIKit
 class Monsters{
     var health:Int = 0
+    var atk:Int = 0
     var name:String = ""
     var moneyValue:Int = 0
     var expValue:Int = 0
     var img:UIImage
     
     
-    init(name:String,  img:UIImage, health:Int, moneyValue:Int, expValue:Int){
+    init(name:String,  img:UIImage, health:Int, atk:Int,moneyValue:Int, expValue:Int){
         self.name = name
          self.img = img
         self.health = health
         self.moneyValue = moneyValue
         self.expValue = expValue
-       
+       self.atk = atk
     }
     func getHealth() ->Int{
         return self.health
@@ -39,7 +40,9 @@ class Monsters{
     func getImg() ->UIImage{
         return self.img
     }
-    
+    func getAtk() ->Int{
+        return self.atk
+    }
     func setHealth(health:Int){
         self.health=health
     }

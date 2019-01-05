@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19EE86A921E12BF000D2F720 /* RoundButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE86A821E12BF000D2F720 /* RoundButtons.swift */; };
 		3344B94C21CD5E6E00E4E9C7 /* Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3344B94B21CD5E6E00E4E9C7 /* Fight.swift */; };
 		335215FA21A873E400559CD7 /* DUNGEON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335215F921A873E400559CD7 /* DUNGEON.swift */; };
 		33C1EA7621B8515200151C7C /* ViewControllerShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C1EA7521B8515200151C7C /* ViewControllerShop.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19EE86A821E12BF000D2F720 /* RoundButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButtons.swift; sourceTree = "<group>"; };
 		3344B94B21CD5E6E00E4E9C7 /* Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fight.swift; sourceTree = "<group>"; };
 		335215F921A873E400559CD7 /* DUNGEON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUNGEON.swift; sourceTree = "<group>"; };
 		33C1EA7521B8515200151C7C /* ViewControllerShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerShop.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				33C1EA7521B8515200151C7C /* ViewControllerShop.swift */,
 				33D35E0E21C18A5A001D5161 /* Collections.swift */,
 				3344B94B21CD5E6E00E4E9C7 /* Fight.swift */,
+				19EE86A821E12BF000D2F720 /* RoundButtons.swift */,
 			);
 			path = Clases;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				335215FA21A873E400559CD7 /* DUNGEON.swift in Sources */,
 				33F5C3EF219F3D4A00DB93A6 /* Items.swift in Sources */,
 				33F5C3F8219F3E0B00DB93A6 /* Dice.swift in Sources */,
+				19EE86A921E12BF000D2F720 /* RoundButtons.swift in Sources */,
 				33F5C3F1219F3D5900DB93A6 /* Monsters.swift in Sources */,
 				33F5C3F3219F3DD100DB93A6 /* Heroes.swift in Sources */,
 				33F5C3BF219F38A200DB93A6 /* ViewController.swift in Sources */,

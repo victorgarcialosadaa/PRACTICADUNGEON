@@ -12,6 +12,7 @@ import UIKit
     class Fight: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
         
+        
         @IBOutlet weak var pickerViewMonstruo: UIPickerView!
         
         @IBOutlet weak var pickerViewHeroe: UIPickerView!
@@ -50,37 +51,6 @@ import UIKit
         }
         
         @IBOutlet weak var lblColor: UILabel!
-        
-        @IBAction func btnClick(_ sender: Any) {
-            
-            //var aleatorio = Int(arc4random_uniform(Int32(3)))
-            let number = Int.random(in: 0 ..< 3)
-            
-            //pickerView.selectRow(number, inComponent: 0, animated: true)
-            
-            
-            UIView.animate(withDuration: 1, animations:{
-                self.lblColor.textColor = UIColor.red
-            }, completion:{ finished in
-                /*Código cuando termina*/
-                
-                
-                
-            })
-            
-            
-            UIView.animate(withDuration: 0.6, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: .curveEaseOut, animations: {}, completion: { finished in
-                
-                if number % 2 == 0 {
-                    self.lblColor.textColor = UIColor.blue
-                }else{
-                    self.lblColor.textColor = UIColor.orange
-                }
-                
-            }
-            )
-            
-        }
         
         func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
             return 100.0

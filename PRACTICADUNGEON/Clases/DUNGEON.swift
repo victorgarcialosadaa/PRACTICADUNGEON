@@ -8,9 +8,10 @@
 
 import UIKit
 
+var monsterSelected:Monsters?
 
 class DUNGEON : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-        
+
         var monsterList:[Monsters]=listaMonstruos
       
     @IBOutlet weak var pickerView: UIPickerView!
@@ -35,9 +36,41 @@ class DUNGEON : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             
             myView.addSubview(myImageView)
             
-            let myLabel:UILabel = UILabel(frame: CGRect(x: 20, y: 0, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+            let myLabel:UILabel = UILabel(frame: CGRect(x: 20, y: -30, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+        
+            
+            let myLabel2:UILabel = UILabel(frame: CGRect(x: 120, y: -40, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+            
+            let myLabelStat1:UILabel = UILabel(frame: CGRect(x: 20, y: -5, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+            
+            let myLabelStat2:UILabel = UILabel(frame: CGRect(x: 120, y: -5, width: pickerView.rowSize(forComponent: 0).width, height: 100))
+            
+            let myLabelStat3:UILabel = UILabel(frame: CGRect(x: 20, y: 25, width: pickerView.rowSize(forComponent: 0).width, height: 100))
             
             //Asignamos propiedades a nuestra label
+            myLabel.textColor = UIColor.black
+            myLabel.font = UIFont(name: "Verdana", size: 15)
+            myLabel.text = monsterList[row].name
+            myView.addSubview(myLabel)
+            
+            
+            
+            myLabelStat1.textColor = UIColor.black
+            myLabelStat1.font = UIFont(name: "Verdana", size: 15)
+            myLabelStat1.text = String("ATK: \(monsterList[row].atk)")
+            myView.addSubview(myLabelStat1)
+            
+            myLabelStat2.textColor = UIColor.black
+            myLabelStat2.font = UIFont(name: "Verdana", size: 15)
+            myLabelStat2.text = String("EXP: \(monsterList[row].expValue)")
+            myView.addSubview(myLabelStat2)
+            
+            myLabelStat3.textColor = UIColor.black
+            myLabelStat3.font = UIFont(name: "Verdana", size: 15)
+            myLabelStat3.text = String("REWARD: \(monsterList[row].moneyValue)")
+            myView.addSubview(myLabelStat3)
+            
+            
             myLabel.textColor = UIColor.black
             myLabel.font = UIFont(name: "Verdana", size: 26)
             myLabel.text = monsterList[row].name
@@ -79,14 +112,22 @@ class DUNGEON : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             )
             
         }
-        
-        func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+  
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        monsterSelected = monsterList[row]
+    }
+    
+    
+    @IBAction func pickMonster(_ sender: Any) {
+    }
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
             return 100.0
         }
         
         
-        func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return monsterList[row].name
+    private func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> Monsters? {
+            return monsterList[row]
         }
         
         

@@ -16,16 +16,18 @@ class Items{
     var mag:Int = 0
     var lck:Int = 0
     var img:UIImage
+    var price:Int = 0
 
     
     
-    init(name:String, atk:Int,def:Int,mag:Int,lck:Int,img:UIImage){
+    init(name:String, atk:Int,def:Int,mag:Int,lck:Int,img:UIImage, price:Int){
         self.name = name
         self.atk = atk
         self.def = atk
         self.mag = atk
         self.lck = atk
         self.img = img
+        self.price = price
         
     }
     func getName() ->String{
@@ -46,6 +48,9 @@ class Items{
     }
     func getImg() ->UIImage{
         return self.img
+    }
+    func getPrice() ->Int{
+        return self.price
     }
     func setAtk(atk:Int){
         self.atk=atk
