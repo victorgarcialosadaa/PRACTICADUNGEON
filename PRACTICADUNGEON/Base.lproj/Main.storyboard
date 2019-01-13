@@ -195,7 +195,7 @@
         <!--View Controller-->
         <scene sceneID="WYI-CV-ROW">
             <objects>
-                <viewController id="Mc7-qD-6GJ" sceneMemberID="viewController">
+                <viewController id="Mc7-qD-6GJ" customClass="ViewController" customModule="PRACTICADUNGEON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V97-CC-Igh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -502,27 +502,31 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PX-95-ry9">
-                                <rect key="frame" x="21" y="257" width="326" height="140"/>
+                                <rect key="frame" x="28" y="256" width="326" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="chooseHero2:" destination="0pJ-0h-gkn" eventType="touchUpInside" id="WDZ-rY-TFt"/>
+                                    <action selector="pickHero2:" destination="0pJ-0h-gkn" eventType="touchUpInside" id="IF9-hK-84V"/>
+                                    <action selector="pickHero:" destination="Mc7-qD-6GJ" eventType="touchUpInside" id="edS-Td-Pzc"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="9I1-S6-ay4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSJ-DK-kEk">
-                                <rect key="frame" x="24" y="54" width="326" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="chooseHero1:" destination="0pJ-0h-gkn" eventType="touchUpInside" id="wH0-7d-lmz"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="bYF-dZ-Bdr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kd-Sj-35J">
-                                <rect key="frame" x="26" y="456" width="327" height="140"/>
+                                <rect key="frame" x="32" y="456" width="327" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="chooseHero3:" destination="0pJ-0h-gkn" eventType="touchUpInside" id="YQ8-kt-ghl"/>
+                                    <action selector="pickHero:" destination="Mc7-qD-6GJ" eventType="touchUpInside" id="0nF-jd-jhX"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="21d-kZ-XA8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSJ-DK-kEk">
+                                <rect key="frame" x="28" y="57" width="326" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="pickHero:" destination="0pJ-0h-gkn" eventType="touchUpInside" id="G0M-LO-Lch"/>
+                                    <action selector="pickHero:" destination="Mc7-qD-6GJ" eventType="touchUpInside" id="GfD-rA-dLf"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bYF-dZ-Bdr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -657,8 +661,8 @@
         <image name="preset_backpack" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Eeh-LZ-RqB"/>
-        <segue reference="3q0-9Y-suh"/>
+        <segue reference="bYF-dZ-Bdr"/>
+        <segue reference="Ry9-Nw-XId"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

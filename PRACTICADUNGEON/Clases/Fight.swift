@@ -71,6 +71,7 @@ import UIKit
             super.viewDidLoad()
             
             UserImg.image = chosenHero?.getImg()
+            MonsterImg.image = monsterSelected?.getImg()
             // Do any additional setup after loading the view, typically from a nib.
             
             pickerViewMonstruo.delegate = self

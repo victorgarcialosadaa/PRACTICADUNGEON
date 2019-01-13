@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+var chosenHero:Heroes?
 class ViewController: UIViewController {
-    @IBAction func chooseHero1(_ sender: UIButton) {
+    
+   /* @IBAction func chooseHero1(_ sender: UIButton) {
         if sender.tag == 1 {
             chosenHero=listaHeroes[0]
         }
@@ -23,10 +24,34 @@ class ViewController: UIViewController {
   if sender.tag == 3 {
     chosenHero=listaHeroes[2]
         }                                                                                        
-    }
-    override func viewDidLoad() {
-       
+    }*/
+    
+    
+    
+    @IBAction func pickHero(_ sender: UIButton) {
+    switch(sender.tag){case 1:
+        chosenHero=listaHeroes[0]
+        break;
         
+    case 2: chosenHero=listaHeroes[1]
+    break;
+        
+    case 3: chosenHero=listaHeroes[2]
+    break;
+        
+    default:
+        print("error picking hero")
+        
+        }
+        }
+        
+    
+    
+    
+    override func viewDidLoad() {
+        
+        
+       
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }

@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-var chosenHero:Heroes?
 
     
 
