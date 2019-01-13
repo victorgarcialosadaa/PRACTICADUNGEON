@@ -11,6 +11,10 @@ import UIKit
 
     class Fight: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+        @IBOutlet weak var MonsterImg: UIImageView!
+       
+
+        @IBOutlet weak var UserImg: UIImageView!
         
         
         @IBOutlet weak var pickerViewMonstruo: UIPickerView!
@@ -18,7 +22,7 @@ import UIKit
         @IBOutlet weak var pickerViewHeroe: UIPickerView!
         
         var monsterList:[Monsters]=listaMonstruos
-        
+    
         func numberOfComponents(in pickerView: UIPickerView) -> (Int) {
             return 1
         }
@@ -65,6 +69,8 @@ import UIKit
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+            UserImg.image = chosenHero?.getImg()
             // Do any additional setup after loading the view, typically from a nib.
             
             pickerViewMonstruo.delegate = self
