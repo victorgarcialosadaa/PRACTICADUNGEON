@@ -21,56 +21,64 @@ import UIKit
         
         @IBOutlet weak var pickerViewHeroe: UIPickerView!
         
-        var monsterList:[Monsters]=listaMonstruos
+        var monsterList:[Monsters]=Collections.listaMonstruos
     
         func numberOfComponents(in pickerView: UIPickerView) -> (Int) {
             return 1
         }
         
         func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return monsterList.count
+            if(pickerView == pickerViewMonstruo){
+                return
+        Collections.monsterDice.count
+                }
+            else if (pickerView == pickerViewHeroe)
+            {return Collections.userDice.count}
+            return 0
         }
+        
+        
         
         func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
             
+            //VIEW CONTENEDOR
             let myView:UIView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
             
-            let myImageView:UIImageView = UIImageView(frame: CGRect(x: -100, y: 0, width: 100, height: 100))
-            
-            let imagen:UIImage = monsterList[row].img
+            //CONTENEDOR IMAGEN
+            let myImageView:UIImageView = UIImageView(frame: CGRect(x: 10, y: 0, width: 80, height: 80))
+            //IMAGEN
+            let imagen:UIImage = Collections.monsterDice[row].getImg()
+            //Asignamos la imagen al contendor de la vista
             myImageView.image = imagen
             
             myView.addSubview(myImageView)
             
-            let myLabel:UILabel = UILabel(frame: CGRect(x: 20, y: 0, width: pickerView.rowSize(forComponent: 0).width, height: 100))
             
-            //Asignamos propiedades a nuestra label
-            myLabel.textColor = UIColor.black
-            myLabel.font = UIFont(name: "Verdana", size: 26)
-            myLabel.text = monsterList[row].name
-            myView.addSubview(myLabel)
             
+            let myView2:UIView = UIView(frame: CGRect(x: 0, y: 0, width: 70, height: 70))
+           
+            let myImageView2:UIImageView = UIImageView(frame: CGRect(x: -10, y: 0, width: 80, height: 80))
+
+            let imagen2:UIImage = Collections.userDice[row].getImg()
+           
+            myImageView2.image = imagen2
+            
+        myView2.addSubview(myImageView2)
+            
+            
+            if (pickerView == pickerViewMonstruo){
+                return myView
+            }else if(pickerView == pickerViewHeroe){
+                return myView2
+            }
             return myView
-            
         }
-        
-        @IBOutlet weak var lblColor: UILabel!
-        
-        func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-            return 100.0
-        }
-        
-        
-        func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return monsterList[row].name
-        }
-        
-        
-        
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            UserImg.image = chosenHero?.getImg()
+            UserImg.image =
+                chosenHero.getImg()
+            
             MonsterImg.image = monsterSelected?.getImg()
             // Do any additional setup after loading the view, typically from a nib.
             

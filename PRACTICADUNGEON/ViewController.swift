@@ -7,7 +7,9 @@
 //
 
 import UIKit
-var chosenHero:Heroes?
+var chosenHero = Heroes(health:0,
+name:"",
+img: UIImage())
 class ViewController: UIViewController {
     
    /* @IBAction func chooseHero1(_ sender: UIButton) {
@@ -30,13 +32,13 @@ class ViewController: UIViewController {
     
     @IBAction func pickHero(_ sender: UIButton) {
     switch(sender.tag){case 1:
-        chosenHero=listaHeroes[0]
+        chosenHero=Collections.listaHeroes[0]
         break;
         
-    case 2: chosenHero=listaHeroes[1]
+    case 2: chosenHero=Collections.listaHeroes[1]
     break;
         
-    case 3: chosenHero=listaHeroes[2]
+    case 3: chosenHero=Collections.listaHeroes[2]
     break;
         
     default:

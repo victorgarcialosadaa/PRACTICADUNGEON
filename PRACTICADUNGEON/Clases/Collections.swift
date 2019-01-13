@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
     
-
-var listaHeroes:[Heroes]=[
+class Collections{
+ static var listaHeroes:[Heroes]=[
         Heroes(health:5,
                name:"hero1",
                img: UIImage (named:"heroe1")!),
@@ -24,7 +24,7 @@ var listaHeroes:[Heroes]=[
         
         ]
     
-var listaItems:[Items] = [
+static var listaItems:[Items] = [
     Items(name: "cheapArmor", atk:1 , def:1, mag:1,
           lck:1, img: UIImage(named:"armour")!,price:5),
     Items(name: "armour2", atk:1 , def:1, mag:1,
@@ -93,7 +93,7 @@ var listaItems:[Items] = [
           lck:1, img: UIImage(named:"sword4")!,price:5)
 ]
     
-    var listaMonstruos:[Monsters] = [
+    static var listaMonstruos:[Monsters] = [
         Monsters(name: "Golem", img: UIImage(named: "monster1")!,health: 4, atk: 10, moneyValue: 15, expValue: 10),
         Monsters(name: "Treant", img: UIImage(named: "monster2")!,health: 4,atk: 10,  moneyValue: 15, expValue: 10),
         Monsters(name: "Rat", img: UIImage(named: "monster3")!,health: 4, atk: 10, moneyValue: 15, expValue: 10),
@@ -110,3 +110,36 @@ var listaItems:[Items] = [
         Monsters(name: "King", img: UIImage(named: "monster15")!,health: 4, atk: 10, moneyValue: 15, expValue: 10)]
 
 
+static var monsterDice: [Dice] =
+    [
+        Dice(value:1, img:UIImage(named: "dice1")!),
+         Dice(value:2, img:UIImage(named: "dice2")!),
+          Dice(value:3, img:UIImage(named: "dice3")!),
+           Dice(value:4, img:UIImage(named: "dice4")!),
+            Dice(value:5, img:UIImage(named: "dice5")!),
+             Dice(value:6, img:UIImage(named: "dice6")!),
+              Dice(value:7, img:UIImage(named: "dice7")!),
+               Dice(value:8, img:UIImage(named: "dice8")!),
+                Dice(value:9, img:UIImage(named: "dice9")!),
+                 Dice(value:10, img:UIImage(named: "dice10")!),
+                  Dice(value:11, img:UIImage(named: "dice11")!),
+                   Dice(value:12, img:UIImage(named: "dice12")!)
+]
+
+
+static var userDice: [Dice] =
+    [
+        Dice(value:1, img:UIImage(named: "dice1U")!),
+        Dice(value:2, img:UIImage(named: "dice2U")!),
+        Dice(value:3, img:UIImage(named: "dice3U")!),
+        Dice(value:4, img:UIImage(named: "dice4U")!),
+        Dice(value:5, img:UIImage(named: "dice5U")!),
+        Dice(value:6, img:UIImage(named: "dice6U")!),
+        Dice(value:7, img:UIImage(named: "dice7U")!),
+        Dice(value:8, img:UIImage(named: "dice8U")!),
+        Dice(value:9, img:UIImage(named: "dice9U")!),
+        Dice(value:10, img:UIImage(named: "dice10U")!),
+        Dice(value:11, img:UIImage(named: "dice11U")!),
+        Dice(value:12, img:UIImage(named: "dice12U")!)
+]
+}

@@ -636,7 +636,6 @@
                     <connections>
                         <outlet property="MonsterImg" destination="9bg-DG-00Y" id="UNu-95-RXt"/>
                         <outlet property="UserImg" destination="9aL-D6-SR4" id="NwH-Dz-8HZ"/>
-                        <outlet property="monsterImage" destination="9bg-DG-00Y" id="gtP-16-VsA"/>
                         <outlet property="pickerViewHeroe" destination="QUW-Rq-Mfi" id="n2W-lu-Uda"/>
                         <outlet property="pickerViewMonstruo" destination="mQX-iY-250" id="pRv-Qa-Rx0"/>
                     </connections>
@@ -662,7 +661,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bYF-dZ-Bdr"/>
-        <segue reference="Ry9-Nw-XId"/>
+        <segue reference="3q0-9Y-suh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
